@@ -1,7 +1,7 @@
 <Query Kind="Program">
-  <Reference>C:\TEMP\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</Reference>
+  <Reference>C:\sample\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</Reference>
   <Reference>&lt;RuntimeDirectory&gt;\System.Windows.Forms.dll</Reference>
-  <Reference>C:\TEMP\Yandex.Money.Api.Sdk.1.0.0\lib\net45\Yandex.Money.Api.Sdk.dll</Reference>
+  <Reference>C:\sample\Yandex.Money.Api.Sdk.1.0.0\lib\net45\Yandex.Money.Api.Sdk.dll</Reference>
   <Namespace>System.Threading.Tasks</Namespace>
   <Namespace>System.Windows.Forms</Namespace>
   <Namespace>Yandex.Money.Api.Sdk</Namespace>
