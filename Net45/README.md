@@ -1,21 +1,28 @@
-Одним из простых способов, который позволяет ознакомиться с работой API SDK Яндекс.Денег без тяжеловесных инструментов - воспользоваться широко известным приложением [LINQpad](http://www.linqpad.net/).
-Для работы потребуется проделать ряд простых шагов.
+# Yandex.Money API SDK Generic .NET application sample
 
-1. Получить [a command-line NuGet utility](https://nuget.org/nuget.exe).
-2. Скопировать nuget.exe в какую-нибудь папку, например, C:\TEMP
-3. Загрузить SDK, выполнив команду C:\TEMP\nuget install Yandex.Money.Api.Sdk через cmd.exe, перейдя в папку C:\TEMP.
-4. Запустить LINQpad. 
-5. Открыть в нем файл api.sdk.sample.linq и установить на панели инструментов, если не установлен, Language - C# Program.
-6. Вставить в скрипт свой [ClientId](http://tech.yandex.com/money/doc/dg/tasks/register-client.xml) и RedirectUri.
-7. Выполнить скрипт нажав F5. Если возникли ошибки - смотри замечания. 
+## Requirements
 
+The sample application requires:
+* .NET 4.5 or later
+* [LINQpad](http://www.linqpad.net/)
+* [NuGet package manager](https://www.nuget.org/)
 
-Замечания. 
-Используемый в примере WebBrowser control, разделяет настройки с IE. 
+## Getting started
 
-1. Для правильной работы сервиса Яндекс.Денег должна быть включена поддержка TSL протокола. 
-   Это можно сделать в свойствах браузера на вкладке "Дополнительно\Безопасность".
-2. Для предотвращения предупреждений об ошибках в свойствах браузера можно включить опцию - "Отключить отладку сценариев(Internet Explorer)".
-3. Если SDK загружается в папку отличную от указанной в примере, то в LINDpad нужно будет настроить правильные пути к библиотекам (Additional References)
-   Yandex.Money.Api.Sdk.dll и Newtonsoft.Json.dll для net45 через меню "Query\QueryProperties" или по F4.
-   
+The simplest way to try the sample application is using popular lightweight utility [LINQpad](http://www.linqpad.net/).
+
+To run sample you have to do the following steps:
+
+1. Install [LINQpad](http://www.linqpad.net/).
+2. Download [a command-line NuGet utility](https://nuget.org/nuget.exe) to project directory, for example "C:\sample".
+3. Install .NET Yandex.Money API SDK by command "nuget install Yandex.Money.Api.Sdk" in project directory, for example "C:\sample".
+4. Open api.sdk.sample.linq file by LINQpad.
+5. Choose "Language - C# Program".
+6. To be able to use the sample you should register your application and get your unique *client id*. To register an application please follow the steps described on [this page](http://tech.yandex.com/money/doc/dg/tasks/register-client.xml) (also available in [Russian](http://tech.yandex.ru/money/doc/dg/tasks/register-client.xml)).
+7. Write down ClientId and RedirectUri values into the script.
+8. Run the sample and enjoy!
+
+#### Keep in mind
+1. Sample uses WebBrowser control which uses Microsoft Internet Explorer settings.
+2. To use sample, the "TLS" protocol support must be enabled in MSIE settings (enabled by default).
+3. You you see warnings, check "Browser / Disable script debugging (Internet Explorer)" option in browser settings.
